@@ -1,0 +1,35 @@
+#CROSS_LIBGCC1 = libgcc1-asm.a
+#LIB1ASMSRC = m480/lib1funcs.asm
+#LIB1ASMFUNCS = _udivsi3 _umodsi3 _mulsi3
+
+# Don't build libgcc.a (see gcc/Makefile)
+LIBGCC = 
+
+TCFLAGS = -Wa,-I${srcdir}/config/m480
+EXTRA_HEADERS = $(srcdir)/config/m480/gccmxt.inc
+
+# We do not have DF or DI types, so fake out the libgcc2 compilation.
+TARGET_LIBGCC2_CFLAGS=-DDF=SF -DDI=SI -DDItype=SItype -DUDItype=USItype
+LIB2FUNCS_EXTRA = $(srcdir)/config/m480/modsi3.c \
+	$(srcdir)/config/m480/divsi3.c sfieeelib.c
+
+#the following line prevents build of libgcc
+LIBGCC = 
+
+sfieeelib.c: $(srcdir)/config/m480/ieeelib.c
+	echo '#define COMPUTE_TYPE unsigned long'	>sfieeelib.c
+	echo '#define COMPUTE_STYPE signed long'	>>sfieeelib.c
+	echo '#define COMPUTE_TYPE_BITS 32'		>>sfieeelib.c
+	echo '#define MANTISSA_NWORDS 1'		>>sfieeelib.c
+	echo '#define MANTISSA_BITS 24'			>>sfieeelib.c
+	echo '#define EXP_BITS 8'			>>sfieeelib.c
+	echo '#define FLOATING_TYPE float'		>>sfieeelib.c
+	echo '#define SFmode'				>>sfieeelib.c
+	echo '#define MSB_IMPLICIT true'		>>sfieeelib.c
+	echo '#define FLOAT_WORDS_BIG_ENDIAN'		>>sfieeelib.c
+	echo '#define COUNT_LEADING_ZEROS_NEED_CLZ_TAB'	>>sfieeelib.c
+	cat $(srcdir)/config/m480/ieeelib.c		>>sfieeelib.c
+	touch sfieeelib.c
+
+m480-c.mem:
+	ln -s $(srcdir)/config/m480/$@
