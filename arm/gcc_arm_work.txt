@@ -1,0 +1,828 @@
+*** Binutils work ****
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (thumb32_opcodes): Add new instructions.
+	(enum mve_instructions): Likewise.
+	(enum mve_undefined): Add new reasons.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_undefined): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_undefined): Likewise.
+	(print_mve_size): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (thumb32_opcodes): Add new instructions.
+	(enum mve_instructions): Likewise.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_undefined): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_size): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (thumb32_opcodes): Add new instructions.
+	(enum mve_instructions): Likewise.
+	(is_mve_encoding_conflict): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_size): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (thumb32_opcodes): Add new instructions.
+	(enum mve_instructions): Likewise.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_undefined): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_size): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (thumb32_opcodes): Add new instructions.
+	(enum mve_instructions): Likewise.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_undefined): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_size): Likewise.
+	(print_insn_mve): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (thumb32_opcodes): Add new instructions.
+	(print_insn_thumb32): Handle new instructions.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(enum mve_undefined): Add new reasons.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_undefined): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_undefined): Likewise.
+	(print_mve_size): Likewise.
+	(print_mve_shift_n): Likewise.
+	(print_insn_mve): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_rotate): Likewise.
+	(print_mve_size): Likewise.
+	(print_insn_mve): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_size): Likewise.
+	(print_insn_mve): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(enum mve_undefined): Add new reasons.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_undefined): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_undefined): Likewise.
+	(print_mve_size): Likewise.
+	(print_insn_mve): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_undefined): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_size): Likewise.
+	(print_insn_mve): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(enum mve_unpredictable): Add new reasons.
+	(enum mve_undefined): Likewise.
+	(is_mve_okay_in_it): Handle new isntructions.
+	(is_mve_encoding_conflict): Likewise.
+	(is_mve_undefined): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_vmov_index): Likewise.
+	(print_simd_imm8): Likewise.
+	(print_mve_undefined): Likewise.
+	(print_mve_unpredictable): Likewise.
+	(print_mve_size): Likewise.
+	(print_insn_mve): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(enum mve_unpredictable): Add new reasons.
+	(enum mve_undefined): Likewise.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_undefined): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_undefined): Likewise.
+	(print_mve_unpredictable): Likewise.
+	(print_mve_rounding_mode): Likewise.
+	(print_mve_vcvt_size): Likewise.
+	(print_mve_size): Likewise.
+	(print_insn_mve): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(enum mve_unpredictable): Add new reasons.
+	(enum mve_undefined): Likewise.
+	(is_mve_undefined): Handle new instructions.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_undefined): Likewise.
+	(print_mve_unpredictable): Likewise.
+	(print_mve_size): Likewise.
+	(print_insn_mve): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(enum mve_undefined): Add new reasons.
+	(insns): Add new instructions.
+	(is_mve_encoding_conflict):
+	(print_mve_vld_str_addr): New print function.
+	(is_mve_undefined): Handle new instructions.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_undefined): Likewise.
+	(print_mve_size): Likewise.
+	(print_insn_coprocessor_1): Handle MVE VLDR, VSTR instructions.
+	(print_insn_mve):  Handle new operands.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(enum mve_unpredictable): Add new reasons.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_unpredictable): Likewise.
+	(mve_opcodes): Add new instructions.
+	(print_mve_unpredictable): Handle new reasons.
+	(print_mve_register_blocks): New print function.
+	(print_mve_size): Handle new instructions.
+	(print_insn_mve): Likewise.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(enum mve_unpredictable): Add new reasons.
+	(enum mve_undefined): Likewise.
+	(is_mve_encoding_conflict): Handle new instructions.
+	(is_mve_undefined): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(coprocessor_opcodes): Move NEON VDUP from here...
+	(neon_opcodes): ... to here.
+	(mve_opcodes): Add new instructions.
+	(print_mve_undefined):  Handle new reasons.
+	(print_mve_unpredictable): Likewise.
+	(print_mve_size): Handle new instructions.
+	(print_insn_neon): Handle vdup.
+	(print_insn_mve): Handle new operands.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): Add new instructions.
+	(enum mve_unpredictable): Add new values.
+	(mve_opcodes): Add new instructions.
+	(vec_condnames): New array with vector conditions.
+	(mve_predicatenames): New array with predicate suffixes.
+	(mve_vec_sizename): New array with vector sizes.
+	(enum vpt_pred_state): New enum with vector predication states.
+	(struct vpt_block): New struct type for vpt blocks.
+	(vpt_block_state): Global struct to keep track of state.
+	(mve_extract_pred_mask): New helper function.
+	(num_instructions_vpt_block): Likewise.
+	(mark_outside_vpt_block): Likewise.
+	(mark_inside_vpt_block): Likewise.
+	(invert_next_predicate_state): Likewise.
+	(update_next_predicate_state): Likewise.
+	(update_vpt_block_state): Likewise.
+	(is_vpt_instruction): Likewise.
+	(is_mve_encoding_conflict): Add entries for new instructions.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_unpredictable): Handle new cases.
+	(print_instruction_predicate): Likewise.
+	(print_mve_size): New function.
+	(print_vec_condition): New function.
+	(print_insn_mve): Handle vpt blocks and new print operands.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+
+	* arm-dis.c (print_insn_coprocessor_1): Disable the use of coprocessors
+	8, 14 and 15 for Armv8.1-M Mainline.
+
+2019-05-16  Andre Vieira  <andre.simoesdiasvieira@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* arm-dis.c (enum mve_instructions): New enum.
+	(enum mve_unpredictable): Likewise.
+	(enum mve_undefined): Likewise.
+	(struct mopcode32): New struct.
+	(is_mve_okay_in_it): New function.
+	(is_mve_architecture): Likewise.
+	(arm_decode_field): Likewise.
+	(arm_decode_field_multiple): Likewise.
+	(is_mve_encoding_conflict): Likewise.
+	(is_mve_undefined): Likewise.
+	(is_mve_unpredictable): Likewise.
+	(print_mve_undefined): Likewise.
+	(print_mve_unpredictable): Likewise.
+	(print_insn_coprocessor_1): Use arm_decode_field_multiple.
+	(print_insn_mve): New function.
+	(print_insn_thumb32): Handle MVE architecture.
+	(select_arm_features): Force thumb for Armv8.1-m Mainline.
+
+***** End binutils work ****
+
+2018-07-19  Michael Collison  <michael.collison@arm.com>
+	    Richard Henderson  <rth@redhat.com>
+
+	* config/aarch64/aarch64.md (subv<GPI>4, usubv<GPI>4): New patterns.
+	(subti): Handle op1 zero.
+	(subvti4, usub4ti4): New.
+	(*sub<GPI>3_compare1_imm): New.
+	(sub<GPI>3_carryinCV): New.
+	(*sub<GPI>3_carryinCV_z1_z2, *sub<GPI>3_carryinCV_z1): New.
+	(*sub<GPI>3_carryinCV_z2, *sub<GPI>3_carryinCV): New.
+
+2018-07-19  Michael Collison  <michael.collison@arm.com>
+	    Richard Henderson  <rth@redhat.com>
+
+	* config/aarch64/aarch64.md: (addv<GPI>4, uaddv<GPI>4): New.
+	(addti3): Create simpler code if low part is already known to be 0.
+	(addvti4, uaddvti4): New.
+	(*add<GPI>3_compareC_cconly_imm): New.
+	(*add<GPI>3_compareC_cconly): New.
+	(*add<GPI>3_compareC_imm): New.
+	(*add<GPI>3_compareC): Rename from add<GPI>3_compare1; do not
+	handle constants within this pattern..
+	(*add<GPI>3_compareV_cconly_imm): New.
+	(*add<GPI>3_compareV_cconly): New.
+	(*add<GPI>3_compareV_imm): New.
+	(add<GPI>3_compareV): New.
+	(add<GPI>3_carryinC, add<GPI>3_carryinV): New.
+	(*add<GPI>3_carryinC_zero, *add<GPI>3_carryinV_zero): New.
+	(*add<GPI>3_carryinC, *add<GPI>3_carryinV): New.
+	((*add<GPI>3_compareC_cconly_imm): Replace 'ne' operator
+	with 'comparison' operator.
+	(*add<GPI>3_compareV_cconly_imm): Ditto.
+	(*add<GPI>3_compareV_cconly): Ditto.
+	(*add<GPI>3_compareV_imm): Ditto.
+	(add<GPI>3_compareV): Ditto.
+	(add<mode>3_carryinC): Ditto.
+	(*add<mode>3_carryinC_zero): Ditto.
+	(*add<mode>3_carryinC): Ditto.
+	(add<mode>3_carryinV): Ditto.
+	(*add<mode>3_carryinV_zero): Ditto.
+	(*add<mode>3_carryinV): Ditto.
+
+2018-07-19  Michael Collison  <michael.collison@arm.com>
+	    Richard Henderson  <rth@redhat.com>
+
+	* config/aarch64/aarch64-modes.def (CC_V): New.
+	* config/aarch64/aarch64-protos.h
+	(aarch64_addti_scratch_regs): Declare
+	(aarch64_subvti_scratch_regs): Declare.
+	(aarch64_expand_subvti): Declare.
+	(aarch64_gen_unlikely_cbranch): Declare
+	* config/aarch64/aarch64.c (aarch64_select_cc_mode): Test
+	for signed overflow using CC_Vmode.
+	(aarch64_get_condition_code_1): Handle CC_Vmode.
+	(aarch64_gen_unlikely_cbranch): New function.
+	(aarch64_addti_scratch_regs): New function.
+	(aarch64_subvti_scratch_regs): New function.
+	(aarch64_expand_subvti): New function.
+
+2018-05-31  Michael Collison  <michael.collison@arm.com>
+
+	* config/aarch64/aarch64.md:
+	(*fix_to_zero_extenddfdi2): New pattern.
+	* gcc.target/aarch64/fix_extend1.c: New testcase.
+
+2018-02-06  Michael Collison  <michael.collison@arm.com>
+
+	* config/arm/thumb2.md:
+	(*thumb2_mov_negscc): Split only if TARGET_THUMB2 && !arm_restrict_it.
+	(*thumb_mov_notscc): Ditto.
+
+2018-01-10  Michael Collison  <michael.collison@arm.com>
+
+	* config/aarch64/aarch64-modes.def (V2HF): New VECTOR_MODE.
+	* config/aarch64/aarch64-option-extension.def: Add
+	AARCH64_OPT_EXTENSION of 'fp16fml'.
+	* config/aarch64/aarch64-c.c (aarch64_update_cpp_builtins):
+	(__ARM_FEATURE_FP16_FML): Define if TARGET_F16FML is true.
+	* config/aarch64/predicates.md (aarch64_lane_imm3): New predicate.
+	* config/aarch64/constraints.md (Ui7): New constraint.
+	* config/aarch64/iterators.md (VFMLA_W): New mode iterator.
+	(VFMLA_SEL_W): Ditto.
+	(f16quad): Ditto.
+	(f16mac1): Ditto.
+	(VFMLA16_LOW): New int iterator.
+	(VFMLA16_HIGH): Ditto.
+	(UNSPEC_FMLAL): New unspec.
+	(UNSPEC_FMLSL): Ditto.
+	(UNSPEC_FMLAL2): Ditto.
+	(UNSPEC_FMLSL2): Ditto.
+	(f16mac): New code attribute.
+	* config/aarch64/aarch64-simd-builtins.def
+	(aarch64_fmlal_lowv2sf): Ditto.
+	(aarch64_fmlsl_lowv2sf): Ditto.
+	(aarch64_fmlalq_lowv4sf): Ditto.
+	(aarch64_fmlslq_lowv4sf): Ditto.
+	(aarch64_fmlal_highv2sf): Ditto.
+	(aarch64_fmlsl_highv2sf): Ditto.
+	(aarch64_fmlalq_highv4sf): Ditto.
+	(aarch64_fmlslq_highv4sf): Ditto.
+	(aarch64_fmlal_lane_lowv2sf): Ditto.
+	(aarch64_fmlsl_lane_lowv2sf): Ditto.
+	(aarch64_fmlal_laneq_lowv2sf): Ditto.
+	(aarch64_fmlsl_laneq_lowv2sf): Ditto.
+	(aarch64_fmlalq_lane_lowv4sf): Ditto.
+	(aarch64_fmlsl_lane_lowv4sf): Ditto.
+	(aarch64_fmlalq_laneq_lowv4sf): Ditto.
+	(aarch64_fmlsl_laneq_lowv4sf): Ditto.
+	(aarch64_fmlal_lane_highv2sf): Ditto.
+	(aarch64_fmlsl_lane_highv2sf): Ditto.
+	(aarch64_fmlal_laneq_highv2sf): Ditto.
+	(aarch64_fmlsl_laneq_highv2sf): Ditto.
+	(aarch64_fmlalq_lane_highv4sf): Ditto.
+	(aarch64_fmlsl_lane_highv4sf): Ditto.
+	(aarch64_fmlalq_laneq_highv4sf): Ditto.
+	(aarch64_fmlsl_laneq_highv4sf): Ditto.
+	* config/aarch64/aarch64-simd.md:
+	(aarch64_fml<f16mac1>l<f16quad>_low<mode>): New pattern.
+	(aarch64_fml<f16mac1>l<f16quad>_high<mode>): Ditto.
+	(aarch64_simd_fml<f16mac1>l<f16quad>_low<mode>): Ditto.
+	(aarch64_simd_fml<f16mac1>l<f16quad>_high<mode>): Ditto.
+	(aarch64_fml<f16mac1>l_lane_lowv2sf): Ditto.
+	(aarch64_fml<f16mac1>l_lane_highv2sf): Ditto.
+	(aarch64_simd_fml<f16mac>l_lane_lowv2sf): Ditto.
+	(aarch64_simd_fml<f16mac>l_lane_highv2sf): Ditto.
+	(aarch64_fml<f16mac1>lq_laneq_lowv4sf): Ditto.
+	(aarch64_fml<f16mac1>lq_laneq_highv4sf): Ditto.
+	(aarch64_simd_fml<f16mac>lq_laneq_lowv4sf): Ditto.
+	(aarch64_simd_fml<f16mac>lq_laneq_highv4sf): Ditto.
+	(aarch64_fml<f16mac1>l_laneq_lowv2sf): Ditto.
+	(aarch64_fml<f16mac1>l_laneq_highv2sf): Ditto.
+	(aarch64_simd_fml<f16mac>l_laneq_lowv2sf): Ditto.
+	(aarch64_simd_fml<f16mac>l_laneq_highv2sf): Ditto.
+	(aarch64_fml<f16mac1>lq_lane_lowv4sf): Ditto.
+	(aarch64_fml<f16mac1>lq_lane_highv4sf): Ditto.
+	(aarch64_simd_fml<f16mac>lq_lane_lowv4sf): Ditto.
+	(aarch64_simd_fml<f16mac>lq_lane_highv4sf): Ditto.
+	* config/aarch64/arm_neon.h (vfmlal_low_u32): New intrinsic.
+	(vfmlsl_low_u32): Ditto.
+	(vfmlalq_low_u32): Ditto.
+	(vfmlslq_low_u32): Ditto.
+	(vfmlal_high_u32): Ditto.
+	(vfmlsl_high_u32): Ditto.
+	(vfmlalq_high_u32): Ditto.
+	(vfmlslq_high_u32): Ditto.
+	(vfmlal_lane_low_u32): Ditto.
+	(vfmlsl_lane_low_u32): Ditto.
+	(vfmlal_laneq_low_u32): Ditto.
+	(vfmlsl_laneq_low_u32): Ditto.
+	(vfmlalq_lane_low_u32): Ditto.
+	(vfmlslq_lane_low_u32): Ditto.
+	(vfmlalq_laneq_low_u32): Ditto.
+	(vfmlslq_laneq_low_u32): Ditto.
+	(vfmlal_lane_high_u32): Ditto.
+	(vfmlsl_lane_high_u32): Ditto.
+	(vfmlal_laneq_high_u32): Ditto.
+	(vfmlsl_laneq_high_u32): Ditto.
+	(vfmlalq_lane_high_u32): Ditto.
+	(vfmlslq_lane_high_u32): Ditto.
+	(vfmlalq_laneq_high_u32): Ditto.
+	(vfmlslq_laneq_high_u32): Ditto.
+	* config/aarch64/aarch64.h (AARCH64_FL_F16SML): New flag.
+	(AARCH64_FL_FOR_ARCH8_4): New.
+	(AARCH64_ISA_F16FML): New ISA flag.
+	(TARGET_F16FML): New feature flag for fp16fml.
+	(doc/invoke.texi): Document new fp16fml option.
+
+2018-01-10  Michael Collison  <michael.collison@arm.com>
+
+	* config/aarch64/aarch64-builtins.c:
+	(aarch64_types_ternopu_imm_qualifiers, TYPES_TERNOPUI): New.
+	* config/aarch64/aarch64-c.c (aarch64_update_cpp_builtins):
+	(__ARM_FEATURE_SHA3): Define if TARGET_SHA3 is true.
+	* config/aarch64/aarch64.h (AARCH64_FL_SHA3): New flags.
+	(AARCH64_ISA_SHA3): New ISA flag.
+	(TARGET_SHA3): New feature flag for sha3.
+	* config/aarch64/iterators.md (sha512_op): New int attribute.
+	(CRYPTO_SHA512): New int iterator.
+	(UNSPEC_SHA512H): New unspec.
+	(UNSPEC_SHA512H2): Ditto.
+	(UNSPEC_SHA512SU0): Ditto.
+	(UNSPEC_SHA512SU1): Ditto.
+	* config/aarch64/aarch64-simd-builtins.def
+	(aarch64_crypto_sha512hqv2di): New builtin.
+	(aarch64_crypto_sha512h2qv2di): Ditto.
+	(aarch64_crypto_sha512su0qv2di): Ditto.
+	(aarch64_crypto_sha512su1qv2di): Ditto.
+	(aarch64_eor3qv8hi): Ditto.
+	(aarch64_rax1qv2di): Ditto.
+	(aarch64_xarqv2di): Ditto.
+	(aarch64_bcaxqv8hi): Ditto.
+	* config/aarch64/aarch64-simd.md:
+	(aarch64_crypto_sha512h<sha512_op>qv2di): New pattern.
+	(aarch64_crypto_sha512su0qv2di): Ditto.
+	(aarch64_crypto_sha512su1qv2di): Ditto.
+	(aarch64_eor3qv8hi): Ditto.
+	(aarch64_rax1qv2di): Ditto.
+	(aarch64_xarqv2di): Ditto.
+	(aarch64_bcaxqv8hi): Ditto.
+	* config/aarch64/arm_neon.h (vsha512hq_u64): New intrinsic.
+	(vsha512h2q_u64): Ditto.
+	(vsha512su0q_u64): Ditto.
+	(vsha512su1q_u64): Ditto.
+	(veor3q_u16): Ditto.
+	(vrax1q_u64): Ditto.
+	(vxarq_u64): Ditto.
+	(vbcaxq_u16): Ditto.
+	* config/arm/types.md (crypto_sha512): New type attribute.
+	(crypto_sha3): Ditto.
+	(doc/invoke.texi): Document new sha3 option.
+
+2018-01-10  Michael Collison  <michael.collison@arm.com>
+
+	* config/aarch64/aarch64-builtins.c:
+	(aarch64_types_quadopu_imm_qualifiers, TYPES_QUADOPUI): New.
+	* config/aarch64/aarch64-c.c (aarch64_update_cpp_builtins):
+	(__ARM_FEATURE_SM3): Define if TARGET_SM4 is true.
+	(__ARM_FEATURE_SM4): Define if TARGET_SM4 is true.
+	* config/aarch64/aarch64.h (AARCH64_FL_SM4): New flags.
+	(AARCH64_ISA_SM4): New ISA flag.
+	(TARGET_SM4): New feature flag for sm4.
+	* config/aarch64/aarch64-simd-builtins.def
+	(aarch64_sm3ss1qv4si): Ditto.
+	(aarch64_sm3tt1aq4si): Ditto.
+	(aarch64_sm3tt1bq4si): Ditto.
+	(aarch64_sm3tt2aq4si): Ditto.
+	(aarch64_sm3tt2bq4si): Ditto.
+	(aarch64_sm3partw1qv4si): Ditto.
+	(aarch64_sm3partw2qv4si): Ditto.
+	(aarch64_sm4eqv4si): Ditto.
+	(aarch64_sm4ekeyqv4si): Ditto.
+	* config/aarch64/aarch64-simd.md:
+	(aarch64_sm3ss1qv4si): Ditto.
+	(aarch64_sm3tt<sm3tt_op>qv4si): Ditto.
+	(aarch64_sm3partw<sm3part_op>qv4si): Ditto.
+	(aarch64_sm4eqv4si): Ditto.
+	(aarch64_sm4ekeyqv4si): Ditto.
+	* config/aarch64/iterators.md (sm3tt_op): New int iterator.
+	(sm3part_op): Ditto.
+	(CRYPTO_SM3TT): Ditto.
+	(CRYPTO_SM3PART): Ditto.
+	(UNSPEC_SM3SS1): New unspec.
+	(UNSPEC_SM3TT1A): Ditto.
+	(UNSPEC_SM3TT1B): Ditto.
+	(UNSPEC_SM3TT2A): Ditto.
+	(UNSPEC_SM3TT2B): Ditto.
+	(UNSPEC_SM3PARTW1): Ditto.
+	(UNSPEC_SM3PARTW2): Ditto.
+	(UNSPEC_SM4E): Ditto.
+	(UNSPEC_SM4EKEY): Ditto.
+	* config/aarch64/constraints.md (Ui2): New constraint.
+	* config/aarch64/predicates.md (aarch64_imm2): New predicate.
+	* config/arm/types.md (crypto_sm3): New type attribute.
+	(crypto_sm4): Ditto.
+	* config/aarch64/arm_neon.h (vsm3ss1q_u32): New intrinsic.
+	(vsm3tt1aq_u32): Ditto.
+	(vsm3tt1bq_u32): Ditto.
+	(vsm3tt2aq_u32): Ditto.
+	(vsm3tt2bq_u32): Ditto.
+	(vsm3partw1q_u32): Ditto.
+	(vsm3partw2q_u32): Ditto.
+	(vsm4eq_u32): Ditto.
+	(vsm4ekeyq_u32): Ditto.
+	(doc/invoke.texi): Document new sm4 option.
+
+2018-01-10  Michael Collison  <michael.collison@arm.com>
+
+	* config/aarch64/aarch64-arches.def (armv8.4-a): New architecture.
+	* config/aarch64/aarch64.h (AARCH64_ISA_V8_4): New ISA flag.
+	(AARCH64_FL_FOR_ARCH8_4): New.
+	(AARCH64_FL_V8_4): New flag.
+	(doc/invoke.texi): Document new armv8.4-a option.
+
+2018-01-10  Michael Collison  <michael.collison@arm.com>
+
+	* config/aarch64/aarch64-c.c (aarch64_update_cpp_builtins):
+	(__ARM_FEATURE_AES): Define if TARGET_AES is true.
+	(__ARM_FEATURE_SHA2): Define if TARGET_SHA2 is true.
+	* config/aarch64/aarch64-option-extension.def: Add
+	AARCH64_OPT_EXTENSION of 'sha2'.
+	(aes): Add AARCH64_OPT_EXTENSION of 'aes'.
+	(crypto): Disable sha2 and aes if crypto disabled.
+	(crypto): Enable aes and sha2 if enabled.
+	(simd): Disable sha2 and aes if simd disabled.
+	* config/aarch64/aarch64.h (AARCH64_FL_AES, AARCH64_FL_SHA2):
+	New flags.
+	(AARCH64_ISA_AES, AARCH64_ISA_SHA2): New ISA flags.
+	(TARGET_SHA2): New feature flag for sha2.
+	(TARGET_AES): New feature flag for aes.
+	* config/aarch64/aarch64-simd.md:
+	(aarch64_crypto_aes<aes_op>v16qi): Make pattern
+	conditional on TARGET_AES.
+	(aarch64_crypto_aes<aesmc_op>v16qi): Ditto.
+	(aarch64_crypto_sha1hsi): Make pattern conditional
+	on TARGET_SHA2.
+	(aarch64_crypto_sha1hv4si): Ditto.
+	(aarch64_be_crypto_sha1hv4si): Ditto.
+	(aarch64_crypto_sha1su1v4si): Ditto.
+	(aarch64_crypto_sha1<sha1_op>v4si): Ditto.
+	(aarch64_crypto_sha1su0v4si): Ditto.
+	(aarch64_crypto_sha256h<sha256_op>v4si): Ditto.
+	(aarch64_crypto_sha256su0v4si): Ditto.
+	(aarch64_crypto_sha256su1v4si): Ditto.
+	(doc/invoke.texi): Document new aes and sha2 options.
+
+2017-10-26  Michael Collison  <michael.collison@arm.com>
+
+	* config/aarch64/aarch64.md(<optab>_trunc><vf><GPI:mode>2):
+	New pattern.
+	(<optab>_trunchf<GPI:mode>2: New pattern.
+	(<optab>_trunc<vgp><GPI:mode>2: New pattern.
+	* config/aarch64/iterators.md (wv): New mode attribute.
+	(vf, VF): New mode attributes.
+	(vgp, VGP): New mode attributes.
+	(s): Update attribute with SImode and DImode prefixes.
+
+2017-10-23  Michael Collison  <michael.collison@arm.com> (glibc)
+
+	* sysdeps/aarch64/fpu/e_sqrt.c (ieee754_sqrt): Replace asm statements
+	with __builtin_sqrt.
+	* sysdeps/aarch64/fpu/e_sqrtf.c (ieee754_sqrtf): Replace asm statements
+	with __builtin_sqrtf.
+	* sysdeps/aarch64/fpu/s_ceil.c (__ceil): Replace asm statements
+	with __builtin_ceil.
+	* sysdeps/aarch64/fpu/s_ceilf.c (__ceilf): Replace asm statements
+	with __builtin_ceilf.
+	* sysdeps/aarch64/fpu/s_floor.c (__floor): Replace asm statements
+	with __builtin_floor.
+	* sysdeps/aarch64/fpu/s_floorf.c (__floorf): Replace asm statements
+	with __builtin_floorf.
+	* sysdeps/aarch64/fpu/s_fma.c (__fma): Replace asm statements
+	with __builtin_fma.
+	* sysdeps/aarch64/fpu/s_fmaf.c (__fmaf): Replace asm statements
+	with __builtin_fmaf.
+	* sysdeps/aarch64/fpu/s_fmax.c (__fmax): Replace asm statements
+	with __builtin_fmax.
+	* sysdeps/aarch64/fpu/s_fmaxf.c (__fmaxf): Replace asm statements
+	with __builtin_fmaxf.
+	* sysdeps/aarch64/fpu/s_fmin.c (__fmin): Replace asm statements
+	with __builtin_fmin.
+	* sysdeps/aarch64/fpu/s_fminf.c (__fminf): Replace asm statements
+	with __builtin_fminf.
+	* sysdeps/aarch64/fpu/s_frint.c: Delete file.
+	* sysdeps/aarch64/fpu/s_frintf.c: Delete file.
+	* sysdeps/aarch64/fpu/s_llrint.c (__llrint): Replace asm statements
+	with builtin_rint and conversion to int.
+	* sysdeps/aarch64/fpu/s_llrintf.c (__llrintf): Likewise.
+	* sysdeps/aarch64/fpu/s_llround.c (__llround): Replace asm statements
+	with builtin_llround.
+	* sysdeps/aarch64/fpu/s_llroundf.c (__llroundf): Likewise.
+	* sysdeps/aarch64/fpu/s_lrint.c (__lrint): Replace asm statements
+	with builtin_rint and conversion to long int.
+	* sysdeps/aarch64/fpu/s_lrintf.c (__lrintf): Likewise.
+	* sysdeps/aarch64/fpu/s_lround.c (__lround): Replace asm statements
+	with builtin_lround.
+	* sysdeps/aarch64/fpu/s_lroundf.c (__lroundf): Replace asm statements
+	with builtin_lroundf.
+	* sysdeps/aarch64/fpu/s_nearbyint.c (__nearbyint): Replace asm
+	statements with __builtin_nearbyint.
+	* sysdeps/aarch64/fpu/s_nearbyintf.c (__nearbyintf): Replace asm
+	statements with __builtin_nearbyintf.
+	* sysdeps/aarch64/fpu/s_rint.c (__rint): Replace asm statements
+	with __builtin_rint.
+	* sysdeps/aarch64/fpu/s_rintf.c (__rintf): Replace asm statements
+	with __builtin_rintf.
+	* sysdeps/aarch64/fpu/s_round.c (__round): Replace asm statements
+	with __builtin_round.
+	* sysdeps/aarch64/fpu/s_roundf.c (__roundf): Replace asm statements
+	with __builtin_roundf.
+	* sysdeps/aarch64/fpu/s_trunc.c (__trunc): Replace asm statements
+	with __builtin_trunc.
+	* sysdeps/aarch64/fpu/s_truncf.c (__truncf): Replace asm statements
+	with __builtin_truncf.
+	* sysdeps/aarch64/fpu/Makefile: Build e_sqrt[f].c with -fno-math-errno,
+	and s_l[l]round[f].c too.
+
+2017-10-14  Kyrylo Tkachov  <kyrylo.tkachov@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	* compare-elim.c: Include emit-rtl.h.
+	(can_merge_compare_into_arith): New function.
+	(try_validate_parallel): Likewise.
+	(try_merge_compare): Likewise.
+	(try_eliminate_compare): Call the above when no previous clobber
+	is available.
+	(execute_compare_elim_after_reload): Add DF_UD_CHAIN and DF_DU_CHAIN
+	dataflow problems.
+
+2017-10-07  Michael Collison <michael.collison@arm.com>
+
+	* config/aarch64/aarch64.md (*aarch64_reg_<optab>_minus<mode>3):
+	New pattern.
+
+2017-07-23  Michael Collison  <michael.collison@arm.com>
+
+	* config/arm/arm.c (arm_option_override): Deprecate
+	use of -mstructure-size-boundary.
+	* config/arm/arm.opt: Deprecate -mstructure-size-boundary.
+	* doc/invoke.texi: Deprecate -mstructure-size-boundary.
+
+2017-07-11  Michael Collison  <michael.collison@arm.com>
+
+	* config/aarch64/aarch64-simd.md (aarch64_sub<mode>_compare0):
+	New pattern.
+
+2017-06-29  Kyrylo Tkachov  <kyrylo.tkachov@arm.com>
+	    Michael Collison <michael.collison@arm.com>
+
+	PR target/70119
+	* config/aarch64/aarch64.md (*aarch64_<optab>_reg_<mode>3_mask1):
+	New pattern.
+	(*aarch64_reg_<mode>3_neg_mask2): New pattern.
+	(*aarch64_reg_<mode>3_minus_mask): New pattern.
+	(*aarch64_<optab>_reg_di3_mask2): New pattern.
+	* config/aarch64/aarch64.c (aarch64_rtx_costs): Account for cost
+	of shift when the shift amount is masked with constant equal to
+	the size of the mode.
+	* config/aarch64/predicates.md (subreg_lowpart_operator): New
+	predicate.
+
+2017-06-28  Michael Collison  <michael.collison@arm.com>
+
+	PR target/68535
+	* config/arm/arm.c (gen_ldm_seq): Remove last unnecessary
+	set of base_reg
+	(arm_gen_movmemqi): Removed unused variable 'i'.
+	Convert 'for' loop into 'while' loop.
+	(arm_expand_prologue): Remove last unnecessary set of insn.
+	(thumb_pop): Remove unused variable 'pushed_words'.
+	(thumb_exit): Remove last unnecessary set of regs_to_pop.
+
+2017-06-27  Michael Collison  <michael.collison@arm.com>
+
+	* config/aarch64/aarch64-simd.md (aarch64_combine<mode>): Directly
+	call aarch64_split_simd_combine.
+	* (aarch64_combine_internal<mode>): Delete pattern.
+	* config/aarch64/aarch64.c (aarch64_split_simd_combine):
+	Allow register and subreg operands.
+
+2016-11-22  Michael Collison  <michael.collison@arm.com>
+
+	* config/aarch64/aarch64-protos.h
+	(aarch64_and_split_imm1, aarch64_and_split_imm2)
+	(aarch64_and_bitmask_imm): New prototypes
+	* config/aarch64/aarch64.c (aarch64_and_split_imm1):
+	New overloaded function to create bit mask covering the
+	lowest to highest bits set.
+	(aarch64_and_split_imm2): New overloaded functions to create bit
+	mask of zeros between first and last bit set.
+	(aarch64_and_bitmask_imm): New function to determine if a integer
+	is a valid two instruction "and" operation.
+	* config/aarch64/aarch64.md:(and<mode>3): New define_insn and _split
+	allowing wider range of constants with "and" operations.
+	* (ior<mode>3, xor<mode>3): Use new LOGICAL2 iterator to prevent
+	"and" operator from matching restricted constant range used for
+	ior and xor operators.
+	* config/aarch64/constraints.md (UsO constraint): New SImode constraint
+	for constants in "and" operantions.
+	(UsP constraint): New DImode constraint for constants
+	in "and" operations.
+	* config/aarch64/iterators.md (lconst2): New mode iterator.
+	(LOGICAL2): New code iterator.
+	* config/aarch64/predicates.md (aarch64_logical_and_immediate): New
+	predicate.
+	(aarch64_logical_and_operand): New predicate allowing extended
+	constants for "and" operations.
+
+2016-08-24  Michael Collison  <michael.collison@linaro.org>
+	    Michael Collison  <michael.collison@arm.com>
+
+	* config/arm/arm-modes.def: Add new condition code mode CC_V
+	to represent the overflow bit.
+	* config/arm/arm.c (maybe_get_arm_condition_code):
+	Add support for CC_Vmode.
+	(arm_gen_unlikely_cbranch): New function to generate common
+	rtl conditional branches for overflow patterns.
+	* config/arm/arm-protos.h: Add prototype for
+	arm_gen_unlikely_cbranch.
+	* config/arm/arm.md (addv<mode>4, add<mode>3_compareV,
+	addsi3_compareV_upper): New patterns to support signed
+	builtin overflow add operations.
+	(uaddv<mode>4, add<mode>3_compareC, addsi3_compareV_upper):
+	New patterns to support unsigned builtin add overflow operations.
+	(subv<mode>4, sub<mode>3_compare1): New patterns to support signed
+	builtin overflow subtract operations,
+	(usubv<mode>4): New patterns to support unsigned builtin subtract
+	overflow operations.
+	(negvsi3, negvdi3, negdi2_compare, negsi2_carryin_compare): New patterns
+	to support builtin overflow negate operations.
+
+2016-04-25  Michael Collison  <michael.collison@linaro.org>
+
+	* config/arm/neon.md (widen_<us>sum<mode>): New patterns where
+	mode is VQI to improve mixed mode vectorization.
+	* config/arm/neon.md (vec_sel_widen_ssum_lo<VQI:mode><VW:mode>3): New
+	define_insn to match low half of signed vaddw.
+	* config/arm/neon.md (vec_sel_widen_ssum_hi<VQI:mode><VW:mode>3): New
+	define_insn to match high half of signed vaddw.
+	* config/arm/neon.md (vec_sel_widen_usum_lo<VQI:mode><VW:mode>3): New
+	define_insn to match low half of unsigned vaddw.
+	* config/arm/neon.md (vec_sel_widen_usum_hi<VQI:mode><VW:mode>3): New
+	define_insn to match high half of unsigned vaddw.
+	* config/arm/arm.c (arm_simd_vect_par_cnst_half): New function.
+	(arm_simd_check_vect_par_cnst_half_p): Likewise.
+	* config/arm/arm-protos.h (arm_simd_vect_par_cnst_half): Prototype
+	for new function.
+	(arm_simd_check_vect_par_cnst_half_p): Likewise.
+	* config/arm/predicates.md (vect_par_constant_high): Support
+	big endian and simplify by calling
+	arm_simd_check_vect_par_cnst_half
+	(vect_par_constant_low): Likewise.
+
+2016-03-03  Michael Collison  <michael.collison@linaro.org>
+
+	PR target/70014
+	* config/arm/arm.md (*subsi3_carryin_const): Change predicate
+	for operand 1 to s_register_operand. Change predicate for operand
+	2 to arm_not_immediate_operand.
+
+2015-11-24  Michael Collison  <michael.collison@linaro.org>
+
+	* config/aarch64/aarch64-simd.md (widen_ssum, widen_usum)
+	(aarch64_<ANY_EXTEND:su><ADDSUB:optab>w<mode>_internal): New patterns
+	* config/aarch64/iterators.md (Vhalf, VDBLW): New mode attributes.
+
+2015-10-16  Michael Collison  <michael.collison@linaro.org>
+	    Andrew Pinski  <andrew.pinski@caviumnetworks.com>
+
+	* match.pd ((x < y) && (x < z) -> x < min (y,z),
+	(x > y) and (x > z) -> x > max (y,z))
+
+2015-09-24  Michael Collison  <michael.collison@linaro.org>
+
+	PR other/57195
+	* read-md.c (read_name): Allow mode iterators inside angle
+	brackets in rtl expressions.
+
+2015-08-30  Michael Collison  <michael.collison@linaro.org>
+
+	PR other/67320
+	* doc.md.texi: Rename [su]sum_widen to widen_[su]sum to reflect correct
+	standard names
+
+2015-01-09  Michael Collison  <michael.collison@linaro.org>
+
+	PR tree-optimization/64322
+	* tree-vrp.c (extract_range_from_binary_expr_1): Attempt to derive
+	range for RSHIFT_EXPR even if vr0 range is not VR_RANGE or is symbolic.
+
+2014-11-04  Michael Collison <michael.collison@linaro.org>
+
+	* config/aarch64/iterators.md (lconst_atomic): New mode attribute
+	to support constraints for CONST_INT in atomic operations.
+	* config/aarch64/atomics.md
+	(atomic_<atomic_optab><mode>): Use lconst_atomic constraint.
+	(atomic_nand<mode>): Likewise.
+	(atomic_fetch_<atomic_optab><mode>): Likewise.
+	(atomic_fetch_nand<mode>): Likewise.
+	(atomic_<atomic_optab>_fetch<mode>): Likewise.
+	(atomic_nand_fetch<mode>): Likewise.
+
+2014-11-02  Michael Collison  <michael.collison@linaro.org>
+
+	* config/arm/arm.h (CLZ_DEFINED_VALUE_AT_ZERO) : Update
+	to support vector modes.
+	(CTZ_DEFINED_VALUE_AT_ZERO): Ditto.
